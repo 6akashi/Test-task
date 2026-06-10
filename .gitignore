@@ -1,0 +1,89 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+*.manifest
+*.spec
+
+# --- IDE & Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# --- Virtual Environment ---
+backend/venv/
+backend/.venv/
+
+# --- Environment Variables ---
+.env
+.env.local
+.env.*.local
+
+# --- Project specific ---
+*.db
+*.sqlite3
+instance/
+
+# --- Logs & databases ---
+*.log
+*.pid
+*.seed
+
+# --- Unit test / coverage ---
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints/
+
+# --- pyenv ---
+.python-version
+
+# --- pip ---
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- mypy ---
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# --- celery ---
+celerybeat-schedule
+celerybeat.pid
+
+# --- SageMath ---
+*.sage.py
+
+# --- Environments ---
+.env
+.envrc
+
+# --- Docker ---
+.docker/
+docker-compose.override.yml

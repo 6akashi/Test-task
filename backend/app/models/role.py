@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String
-from sqlalchemy import relationship
+from sqlalchemy.orm import relationship
 from ..database import Base
 
 
@@ -10,6 +10,8 @@ class Role(Base):
     name = Column(String, unique=True, nullable=False, index=True)
 
     users = relationship("User", back_populates='role')
+    permissions = relationship(
+        "Permission", back_populates='role', cascade="all, delete-orphan")
 
     def __repr__(self):
-        return f"<Category(id={self.id}, name='{self.name}')>"
+        return f"<Role(id={self.id}, name='{self.name}')>"
